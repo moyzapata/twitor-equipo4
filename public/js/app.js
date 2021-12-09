@@ -1,6 +1,13 @@
 
 var url = window.location.href;
-var swLocation = '/twittor/sw.js';
+var swLocation = '/twitor-equipo4/sw.js'
+
+if ( navigator.serviceWorker ) {
+    if(url.includes('localhost')){
+        swLocation = '/sw.js'
+    }
+    navigator.serviceWorker.register(swLocation);
+}
 
 class Camara{
     constructor(videoNode){
