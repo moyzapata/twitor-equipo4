@@ -6,8 +6,8 @@ var router = express.Router();
 const mensajes=[
   {
     _id:'xxx',
-    user:'spiderman',
-    mensaje:'Hola!'
+    user:'hulk',
+    mensaje:'Hola'
   }
 ]
 
